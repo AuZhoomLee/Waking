@@ -1,6 +1,6 @@
 import wave
 import numpy as np
-from LDA_train import get_opt
+from LDA import get_opt
 
 
 #定义求长度函数

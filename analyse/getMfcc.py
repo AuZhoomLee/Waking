@@ -4,14 +4,13 @@ import numpy
 import pandas
 import json
 import os
-from get_y import get_y
-from get_y import get_mark
-from get_y import get_allFileLabel
+from getY import get_y
+from getY import get_mark
+from getY import get_allFileLabel
 from check import checkFile
-from divide_dataset import divide_dataset
+from divideDataset import divide_dataset
 
 # 使用librosa库将划分训练集绝对路径下的语音数据进行提取MFCC参数
-
 
 def get_mfcc_list(allFilePath, n_mfcc, dateset_rate):
     # 使用划分后的训练集获取语音参数

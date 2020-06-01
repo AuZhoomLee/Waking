@@ -1,4 +1,4 @@
-from get_waveSeries import get_waveSeries
+from getWaveSeries import get_waveSeries
 
 # 按序遍历每一个音频数据点，若大于某一阈值就计数
 # 输入：某一个音频的时间序列数据，阈值（默认为0）

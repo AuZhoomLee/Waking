@@ -1,8 +1,8 @@
 import os
 import json
 from check import checkFile
-from get_alldir_filename import get_filename
-from divide_dataset import divide_dataset
+from getAlldirFilename import get_filename
+from divideDataset import divide_dataset
 
 
 def StaticLengthNumber(str_number, length):  # 函数主要将二进制数转为编码字符串

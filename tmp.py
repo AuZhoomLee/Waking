@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 import json
-from get_y import get_mark
+from getY import get_mark
 
 ##yorn test##
 

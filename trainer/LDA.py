@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 import json
-from get_y import get_mark
+from getY import get_mark
 from check import checkFile
-from divide_dataset import divide_dataset
-from get_alldir_filename import get_filename
+from divideDataset import divide_dataset
+from getAlldirFilename import get_filename
 
 # 定义训练函数求解最优分离k与Y/N的分离中心点
 

@@ -188,7 +188,7 @@
 # ------------------------------------------------
 # 测试嵌套字典取数操作
 # 获取所有wav文件路径
-from get_y import get_allFileLabel
+from getY import get_allFileLabel
 allFilePath = 'D:/FFOutput'
 dateset_rate = 0.9  # 拆分比率
 trainSetLabel, testSetLabel = get_allFileLabel(allFilePath, dateset_rate)

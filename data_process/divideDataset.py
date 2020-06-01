@@ -1,6 +1,6 @@
 import numpy as np
 from check import checkFile
-from get_alldir_filename import get_filename
+from getAlldirFilename import get_filename
 
 ## 将所有文件绝对路径划分为训练集和测试集
 # 输入：所有文件的根文件夹（可以含子文件夹）、划分率
