@@ -2,6 +2,7 @@ import numpy as np
 from check import checkFile
 from getAlldirFilename import get_filename
 
+
 ## 将所有文件绝对路径划分为训练集和测试集
 # 输入：所有文件的根文件夹（可以含子文件夹）、划分率
 # 输出：numpy.ndarray格式的训练集和测试集
@@ -35,8 +36,9 @@ def divide_dataset(allFilePath, dateset_rate):
         np.save("./mid_data/trainSet.npy", trainSet)
         np.save("./mid_data/testSet.npy", testSet)
     return trainSet, testSet
-pass
 
+
+pass
 
 if __name__ == '__main__':
     # 获取所有wav文件路径

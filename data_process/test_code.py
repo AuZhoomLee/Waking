@@ -1,10 +1,8 @@
-
-
 #
-#import numpy as np
+# import numpy as np
 # 测试frombuffer函数
-#s = b"hello world"
-#a = np.frombuffer(s, dtype='S1', count=-1, offset=0)
+# s = b"hello world"
+# a = np.frombuffer(s, dtype='S1', count=-1, offset=0)
 
 # print(a)
 
@@ -31,9 +29,9 @@
 
 # 全部值输出
 # 比如要所有的yorn值
-#classify = 'yorn'
+# classify = 'yorn'
 
-#yornDict = []
+# yornDict = []
 # for file in dict.values():
 #    print("file==>",file)
 #    for key,value in file.items():
@@ -47,19 +45,19 @@
 #
 # 测试生成嵌套字典(1)
 # 用defaultdict
-#from collections import defaultdict
+# from collections import defaultdict
 # 如果想生成一个嵌套的dict，如何处理，python3可以，python2貌似不可以
 # file1='file1'
 # file2='file2'
-#ta = 1
-#tb = 0
+# ta = 1
+# tb = 0
 # def gen_dict():
 #    return {
 #        'yorn': ta,
 #        'corb': tb,
 #        'torf': tb,
 #    }
-#d_dict = defaultdict(gen_dict)
+# d_dict = defaultdict(gen_dict)
 # d_dict[file1]
 # d_dict[file2]
 # print("d_dict==>",d_dict)
@@ -73,25 +71,25 @@
 # file2='file2'
 # ta=1
 # tb=0
-#d = {}
-#d1 = d.setdefault(file1,{})
-#d2 = d1.setdefault('yorn',ta)
-#d2 = d1.setdefault('corb',tb)
-#d2 = d1.setdefault('torf',ta)
+# d = {}
+# d1 = d.setdefault(file1,{})
+# d2 = d1.setdefault('yorn',ta)
+# d2 = d1.setdefault('corb',tb)
+# d2 = d1.setdefault('torf',ta)
 
-#d1 = d.setdefault(file2,{})
-#d2 = d1.setdefault('yorn',ta)
-#d2 = d1.setdefault('corb',tb)
-#d2 = d1.setdefault('torf',ta)
+# d1 = d.setdefault(file2,{})
+# d2 = d1.setdefault('yorn',ta)
+# d2 = d1.setdefault('corb',tb)
+# d2 = d1.setdefault('torf',ta)
 # print(d)
 
 # ------------------------------------------------
 ##
 # 测试listdir
-#import os
+# import os
 
 # filepath='D:/TestTrain/'
-#filename = os.listdir(filepath)
+# filename = os.listdir(filepath)
 
 # print(filename)
 
@@ -160,7 +158,7 @@
 # print(mfccData)
 # print(type(mfccData))
 
-#mfccData[i] = numpy.append(mfcc) #LL#
+# mfccData[i] = numpy.append(mfcc) #LL#
 # LL#可以在这里同步计算最大长度
 # max_length=max(max_length,wavmfcc[i])
 
@@ -189,6 +187,7 @@
 # 测试嵌套字典取数操作
 # 获取所有wav文件路径
 from getY import get_allFileLabel
+
 allFilePath = 'D:/FFOutput'
 dateset_rate = 0.9  # 拆分比率
 trainSetLabel, testSetLabel = get_allFileLabel(allFilePath, dateset_rate)
@@ -221,4 +220,4 @@ print("trainSetLabel[key][key]===>>>", t8)
 key = "D:/FFOUTPUT/S-5/DHY/4D.2.CTN.WAV"
 
 keyState = key in trainSetLabel
-print("keyState:",keyState)
+print("keyState:", keyState)

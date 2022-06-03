@@ -1,5 +1,7 @@
 import wave
+
 import numpy as np
+
 
 # 对音频进行标准化采样分析
 # 输入：文件名(绝对路径)

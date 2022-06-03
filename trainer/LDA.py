@@ -1,12 +1,11 @@
 import wave
+
 import matplotlib.pyplot as plt
 import numpy as np
-import os
-import json
-from getY import get_mark
 from check import checkFile
 from divideDataset import divide_dataset
-from getAlldirFilename import get_filename
+from getY import get_mark
+
 
 # 定义训练函数求解最优分离k与Y/N的分离中心点
 
@@ -136,8 +135,9 @@ def get_opt(filepath, dateset_rate, learnrate, finalvalue):
     plt.plot([ok, ok], [0, md], 50, color='blue',
              linestyle="--", linewidth=0.7)
     plt.legend(loc='upper right')
-    plt.annotate('local maximum D=8600.688151394424', xy=(ok, md), xytext=(0.025, 10000), arrowprops=dict(arrowstyle="->",
-                                                                                                          connectionstyle="arc3,rad=.2"))
+    plt.annotate('local maximum D=8600.688151394424', xy=(ok, md), xytext=(0.025, 10000),
+                 arrowprops=dict(arrowstyle="->",
+                                 connectionstyle="arc3,rad=.2"))
     plt.annotate('optimal k=0.018', xy=(ok, 0), xytext=(0.025, 100), arrowprops=dict(arrowstyle="->",
                                                                                      connectionstyle="arc3,rad=.2"))
     plt.show()
@@ -178,6 +178,7 @@ def get_opt(filepath, dateset_rate, learnrate, finalvalue):
 
 pass
 
+
 # 定义求距离函数
 
 
@@ -186,6 +187,7 @@ def get_dis(x, o):
 
 
 pass
+
 
 # 定义求R值函数
 
@@ -198,6 +200,7 @@ def get_R(dis, p):
 
 
 pass
+
 
 # 定义分类Y/N函数
 
@@ -214,6 +217,7 @@ def yorn(Length, k, y, n, p):
 
 
 pass
+
 
 # 定义求分类准确率的函数
 
@@ -234,7 +238,7 @@ def get_Accu(X, yn, k, y, n, p):
 pass
 
 if __name__ == '__main__':
-    #wavdir = 'D:/TestTrain/'
+    # wavdir = 'D:/TestTrain/'
     # 获取所有wav文件路径
     allFilePath = 'D:/FFOutput'
     dateset_rate = 0.9  # 拆分比率

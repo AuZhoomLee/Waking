@@ -1,5 +1,6 @@
 from getWaveSeries import get_waveSeries
 
+
 # 按序遍历每一个音频数据点，累加求平方
 # 输入：某一个音频的时间序列数据，阈值（默认为0）
 # 输出：该音频的能量

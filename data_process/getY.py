@@ -1,13 +1,13 @@
-import os
 import json
+
 from check import checkFile
-from getAlldirFilename import get_filename
+
 from divideDataset import divide_dataset
 
 
 def StaticLengthNumber(str_number, length):  # 函数主要将二进制数转为编码字符串
     str_number = str(str_number)
-    while(len(str_number) < length):
+    while (len(str_number) < length):
         str_number = '0' + str_number
     return str_number
 
@@ -36,6 +36,7 @@ def get_mark(filename):
 
 
 pass
+
 
 # 写一个将数据文件的标记转换成字典存储
 # 参考格式：
@@ -107,6 +108,7 @@ def get_allFileLabel(allFilePath, dateset_rate):
 
     pass
 
+
 # 重写get_y
 # 函数传入：所有标签的字典，要查询的文件名
 # 函数功能：取出文件名对应在字典中的值
@@ -146,7 +148,7 @@ if __name__ == '__main__':
     # 存在文件
     fileName = "D:/FFOUTPUT/S-5/DHY/4D.2.CTN.WAV"
     # 不存在文件
-    #fileName = "D:/FFOUTPUT/S-5/DHY/4D.20.CTN.WAV"
+    # fileName = "D:/FFOUTPUT/S-5/DHY/4D.20.CTN.WAV"
     dictLabelData = trainSetLabel
     corb, torf, yorn = get_y(dictLabelData, fileName)
     print("corb:", corb)
